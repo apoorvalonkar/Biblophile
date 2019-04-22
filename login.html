@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="nav-bar.css">
+<head>
+	<style>
+	html{
+            background:url(bookpic.png) center fixed;
+           
+        }
+        fieldset{
+            color: #070303;
+            font-family: "Arial";
+            width: 350px;
+            margin:50px auto
+        }
+        .title {
+            height: 30px;
+            width: 300px;
+            background-color: #555;
+        }
+        .submit{
+            background:rgba(34,34,34,0.75);
+            border: 5px black;
+            color: white;
+            padding: 5px 28px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<center>
+<div class="title">
+    <h2>LOGIN FORM</h2>
+    RENT A BOOK!
+</div></center>
+<div id="main">
+
+    <form name="login" method="post">
+        <fieldset>
+            <table>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" placeholder="Enter Email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" placeholder="Enter Password" name="password" required /></td>
+                </tr>
+            </table>
+            <input type="submit" value="Login" class="submit"/>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

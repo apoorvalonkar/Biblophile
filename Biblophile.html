@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Biblophile</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+<h1 style="text-align: center;color: black"> <i>BIBLOPHILE</i> </h1>	
+<center><img src="book.gif" style="width: 90%"></center>	
+<section class="columns">
+	
+	<div class="column1" style="background:rgba(34,34,34,0.75)">
+		<h2>ABOUT US</h2> 
+		<p>With biblophiles readers have a chance to rent book and read them at leisure without the heavy cost of buying books.All you need to do is register with us and you will have your books delivered at your doorstep!Once done reading,just post the books back to us and rent another one!</p>
+		
+	</div>
+	
+	<div class="column1" style="background:rgba(34,34,34,0.75)">
+		<h2>BOOK GENRES</h2>
+		<div>
+			<button class="button1">Fiction</button>
+			<div class="bookname">
+				<button class="button1"><a href="login.html">1. HARRY POTTER</a></button>
+				<button class="button1"><a href="login.html">2. THE LORD OF THE RINGS!</a></button>
+			</div>
+			<button class="button1">Non-fiction</button>
+			<div class="bookname">
+				<button class="button1"><a href="login.html">1. Silent Spring</a></button>
+				<button class="button1"><a href="login.html">2. In Cold BLood</a></button>
+			</div>
+			<button class="button1">Biographies and Autobiographies</button>
+			<div class="bookname">
+				<button class="button1"><a href="login.html">1. Steve Jobs</a></button>
+				<button class="button1"><a href="login.html">2. Long Walk to Freedom</a></button>
+			</div>
+			<button class="button1">Philosophy</button>
+			<div class="bookname">
+				<button class="button1"><a href="login.html">1. Being and Time</a></button>
+				<button class="button1"><a href="login.html">2. Euthyphro</a></button>
+			</div>
+			<button class="button1">Self-help</button>
+			<div class="bookname">
+				<button class="button1"><a href="login.html">1. The Secret</a></button>
+				<button class="button1"><a href="login.html">2. Who Moved My Cheese?</a></button>
+			</div>
+			<script>
+			var acc = document.getElementsByClassName("button1");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    this.classList.toggle("active");
+			    var panel = this.nextElementSibling;
+			    if (panel.style.display === "block") {
+			      panel.style.display = "none";
+			    } else {
+			      panel.style.display = "block";
+			    }
+			  });
+			}
+		</script>
+		</div>
+		
+	</div>
+  
+  <div class="column1" style="background:rgba(34,34,34,0.75)">
+		<h2>REGISTER & RENT</h2>
+
+		<form  method="post">
+			<fieldset>
+			<table>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" placeholder="Enter Name" name="firstname" required /></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="text" placeholder="Enter Email" name="email" required /></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><textarea rows="3" cols="40"> </textarea></td>
+				</tr>
+				<tr>
+					<td>Contact:</td>
+					<td><input type="text"placeholder="Enter phone number" name="phno" /></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" placeholder="Enter Password" name="password" required /></td>
+				</tr>
+				<tr>
+					<td>Confirm:</td>
+					<td><input type="password" placeholder="Confirm Password"name="passwordc" required /></td>
+				</tr>			 
+			</table><br>
+			<input type="submit" value="Register" class="register" onclick="alert('Account Created Successfully! Go To LOGIN')"/>		
+   			</fieldset>
+		</form>
+		If already register please Login!
+		<a href="login.html">Login</a>
+	</div>	
+	<div>
+
+	</div>
+</section>			
+</div>
+</body>
+</html>
